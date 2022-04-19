@@ -13,7 +13,7 @@
 
 ![公众号](https://github.com/pengxurui/Android-NoteBook/raw/master/images/搜一搜公众号-文字-白色版.png)
 
-### 使用方法
+## 使用方法
 
 **1、先给一个 Star，你的支持对我非常重要**。我的内容质量绝对对得起你的 Star，给我一点创作的动力，感谢。
 
@@ -32,7 +32,7 @@
 **4、关注我的 [掘金](https://juejin.cn/user/1063982987230392)、[知乎](https://www.zhihu.com/people/pengxurui) 和 [Android 知识体系](https://github.com/pengxurui/Android-NoteBook)**，掘金上有我历史发布过的所有文章，Android-NoteBook 是我参考杜威十进制模型搭建的 Android 知识体系，你可以参考我的模型定制专属的知识体系。
 
 ---
-## 1. Android 的今天和明天
+## 1. Android 系统适配的现状
 
 ![Android 1.0](https://user-images.githubusercontent.com/25008934/164010501-8ece2954-6be6-4293-aa67-a9035063f167.png)
 
@@ -51,20 +51,70 @@
 这样看来，新版本适配的前景看起来不明朗了。但是，对于想成为一名高级的 Android 开发工程师 / 移动开发工程师的你，我希望你明白这也是个机会：
 
 - **1、行业愈发成熟规范：** 如今的移动开发正处在挤泡沫的阶段，初级的招聘量在减少，但中高级的招聘量在增加，这说明整个行业在区域成熟规范。只要你具备足够的能力，你的薪资也会水涨船高；
-- **2、全面能力：** 移动开发已经不再是当年单兵作战的时代，只 “做好” 产品需求已经远远不够了。你不仅需要掌握 Android 本身的知识，还需要全链路的知识扩展，比如产品思维、设计规范、市场运营、数据分析、后端等。如果你已经不是刚工作的小白，但是你却很少了解到这些知识，建议你思考下自己是不是处于舒适区。在这个立场下，系统兼容性就是你全面能力中的一环，你的功能在不同系统下是否兼容，你的技术方案有没有考虑过不同系统的差异，你对 Android 系统有多了解，这些都是你可以体现差异化价值的地方（当然你钻研于技术层面的某一个点，把这个点做到极致也是市场的）。
-- **3、不要把时间浪费在纠结问题上，而是放在解决问题上：** 焦虑不能解决任何问题，与其抱怨问题，不如把时间花在解决问题上。我们要
 
+- **2、全面能力：** 移动开发已经不再是当年单兵作战的时代，只 “做好” 产品需求已经远远不够了。你不仅需要掌握 Android 本身的知识，还需要全链路的知识扩展，比如产品思维、设计规范、市场运营、数据分析、后端等。如果你已经不是刚工作的小白，但是你却很少了解到这些知识，建议你思考下自己是不是处于舒适区。在这个立场下，系统兼容性就是你全面能力中的一环，你的功能在不同系统下是否兼容，你的技术方案有没有考虑过不同系统的差异，你对 Android 系统有多了解，这些都是你可以体现差异化价值的地方（当然你钻研于技术层面的某一个点，把这个点做到极致也是市场的）；
 
+- **3、别人在焦虑，你在行动：** 焦虑不能解决任何问题，与其把时间花在抱怨上，不如把时间花在解决问题上。
+
+---
 
 ## 2. 我们在做的事
 
+我们希望站在开发者的视角，全面且深刻地解读每个 Android 版本更新，以此建立起一个体系化的 Android 系统适配手册。具体包括：
 
+根据内容相关度，我们将从 2 个维度解读：
 
+- **基于时间线：** 现阶段官方每年会发布一个新的版本，因此有必要以一个 Android 版本为单位，解读该版本涉及的新功能与行为变更。这样可以帮助开发同学了解新版本的更新内容，例如我们会通过一个文档解读 Android 13 版本的更新内容与适配自查表；
 
+- **基于内容线：** 通常一个系统功能模块会历经多个系统版本更新才会趋于稳定，因此有必要以一个功能为单位，解读该功能的主要能力以及不同版本的变更和差异。这样可以帮助开发同学了解该功能在不同版本上的差异，例如我们会通过一个文档单独解读系统通知。
 
-## 2. Android 系统适配常见问题
+根据故障敏感性分级，我们将系统变更的兼容性划分为 3 个等级：
 
-#### 2.1 两类行为变更
+- **强制适配❗：** 所有应用必须适配，否则会出现编译不通过、功能不可用或者用户体验受损等问题；
+
+- **推荐适配⭐：** 不强制要求适配，但适配的应用将获得更出色的用户体验或更安全的隐私保护等收益；
+
+- **已适配：** 应用不需要任何改动就已经兼容。
+
+---
+
+## 3. 系统适配手册
+
+### 3.1 系统更新解读
+
+| 平台版本 | API Level | 官方文档 | 适配手册 |
+| --- | --- | --- | --- |
+| Android 13 | TIRAMISU | https://developer.android.google.cn/about/versions/13 <br> https://developer.android.com/about/versions/13 | [Android_13_API_33_T](https://github.com/pengxurui/AndroidPlatformWiki/blob/main/Android%2013/Android_13_API_33_T.md)|
+| Android 12L | S_V2（32） | https://developer.android.google.cn/about/versions/12/12L <br> https://developer.android.com/about/versions/12/12L | / |
+| Android 12 | S（31） | https://developer.android.google.cn/about/versions/12 <br> https://developer.android.com/about/versions/12 | [Android_12_API_31_S](https://github.com/pengxurui/AndroidPlatformWiki/blob/main/Android%2012/Android_12_API_31_S.md)|
+| Android 11 | R（30） | https://developer.android.google.cn/about/versions/11 <br> https://developer.android.com/about/versions/11 | |
+| Android 10 | Q（29） | https://developer.android.google.cn/about/versions/10 <br> https://developer.android.com/about/versions/10 | |
+| Android 9 | P（28） | https://developer.android.google.cn/about/versions/pie <br> https://developer.android.com/about/versions/pie | |
+| Android 8.1 | O_MR1（27） | https://developer.android.google.cn/about/versions/oreo/android-8.1 <br> https://developer.android.com/about/versions/oreo/android-8.1 | |
+| Android 8.0 | O（26） | https://developer.android.google.cn/about/versions/oreo <br> https://developer.android.com/about/versions/oreo | |
+| Android 7.1/7.1.1 | N_MR1（25） | https://developer.android.google.cn/about/versions/nougat/android-7.1 <br> https://developer.android.com/about/versions/nougat/android-7.1 | |
+| Android 7.0 | N（24） | https://developer.android.google.cn/about/versions/nougat <br> https://developer.android.com/about/versions/nougat | |
+| Android 6.0 | M（23） | https://developer.android.google.cn/about/versions/marshmallow <br> https://developer.android.com/about/versions/marshmallow | |
+| Android 5.1 | LOLLIPOP_MR1（22） | https://developer.android.google.cn/about/versions/android-5.1 <br> https://developer.android.com/about/versions/lollipop/android-5.1 | |
+| Android 5.0 | LOLLIPOP（21） | https://developer.android.google.cn/about/versions/lollipop <br> https://developer.android.com/about/versions/lollipop | |
+| Android 4.4W | KITKAT_WATCH（20） | KitKat for Wearables Only | |
+| Android 4.4 | KITKAT（19） | https://developer.android.google.cn/about/versions/kitkat <br> https://developer.android.com/about/versions/kitkat | |
+| Android 4.3 | JELLY_BEAN_MR2（18） | / | |
+| Android 4.2/4.2.2 | JELLY_BEAN_MR1（17） | / | |
+
+### 3.2 Android 13 进行时
+
+![Android13封面](https://user-images.githubusercontent.com/25008934/164061894-ecd36374-e783-45be-b504-9540e234b9a8.png)
+
+<p align='center'>
+<img src="https://github.com/pengxurui/AndroidPlatformWiki/blob/main/Android%2013/images/Android%2013%20%E8%AE%A1%E5%88%92%E6%97%B6%E9%97%B4%E8%BD%B4.svg"/>
+</p>
+
+---
+
+## 4. Android 系统适配常见问题
+
+#### 4.1 两类行为变更
 
 - **面对所有应用的行为变更：** 对于运行在该系统版本上的所有应用都会影响，而无论应用的 targetSDKVersion 为何。通常应该先针对这些变更进行适配和测试，这有助于用户在新版本系统上运行你的应用时，用户体验不会受损；
 
@@ -72,7 +122,7 @@
 
 由于受 targetSDKVersion 控制的行为变更较多，你在适配新版系统时，可以利用下面提到的 “兼容性调试框架” 逐项启用，而不是修改 targetSDKVersion 一次性启用所有变更。
 
-#### 2.2 兼容性调试框架
+#### 4.2 兼容性调试框架
 
 Android 11 引入了一个新的开发者调试工具，能够帮助开发者更加灵活可控地适配新版系统，在系统设置中搜索  可以找到这个功能。
 
@@ -105,37 +155,6 @@ Android 11 引入了一个新的开发者调试工具，能够帮助开发者更
 
 ---
 
-
-| 平台版本 | API Level | Build.VERSON_CODES | 官方文档 |
-| --- | --- | --- | --- |
-| 13 | 10000（预览） | TIRAMISU（预览） | https://developer.android.google.cn/about/versions/13 <br> https://developer.android.com/about/versions/13 |
-| 12L | 32 | S_V2 | https://developer.android.google.cn/about/versions/12/12L <br> https://developer.android.com/about/versions/12/12L |
-| 12 | 31 | S | https://developer.android.google.cn/about/versions/12 <br> https://developer.android.com/about/versions/12 |
-| 11 | 30 | R | https://developer.android.google.cn/about/versions/11 <br> https://developer.android.com/about/versions/11 |
-| 10 | 29 | Q | https://developer.android.google.cn/about/versions/10 <br> https://developer.android.com/about/versions/10 |
-| 9 | 28 | P | https://developer.android.google.cn/about/versions/pie <br> https://developer.android.com/about/versions/pie |
-| 8.1 | 27 | O_MR1 | https://developer.android.google.cn/about/versions/oreo/android-8.1 <br> https://developer.android.com/about/versions/oreo/android-8.1 |
-| 8.0 | 26 | O | https://developer.android.google.cn/about/versions/oreo <br> https://developer.android.com/about/versions/oreo |
-| 7.1/7.1.1 | 25 | N_MR1 | https://developer.android.google.cn/about/versions/nougat/android-7.1 <br> https://developer.android.com/about/versions/nougat/android-7.1 |
-| 7.0 | 24 | N | https://developer.android.google.cn/about/versions/nougat <br> https://developer.android.com/about/versions/nougat |
-| 6.0 | 23 | M | https://developer.android.google.cn/about/versions/marshmallow <br> https://developer.android.com/about/versions/marshmallow |
-| 5.1 | 22 | LOLLIPOP_MR1 | https://developer.android.google.cn/about/versions/android-5.1 <br> https://developer.android.com/about/versions/lollipop/android-5.1 |
-| 5.0 | 21 | LOLLIPOP | https://developer.android.google.cn/about/versions/lollipop <br> https://developer.android.com/about/versions/lollipop |
-| 4.4W | 20 | KITKAT_WATCH | KitKat for Wearables Only |
-| 4.4 | 19 | KITKAT | https://developer.android.google.cn/about/versions/kitkat <br> https://developer.android.com/about/versions/kitkat |
-| 4.3 | 18 | JELLY_BEAN_MR2 | / |
-| 4.2/4.2.2 | 17 | JELLY_BEAN_MR1 | / |
-
-## Android 13 进行时
-
-
-<p align='center'>
-<img src="https://github.com/pengxurui/AndroidPlatformWiki/blob/main/Android%2013/images/Android%2013%20%E8%AE%A1%E5%88%92%E6%97%B6%E9%97%B4%E8%BD%B4.svg"/>
-</p>
-
-
-
-
 # Donate
 
 如果本仓库对你有帮助，可以请小彭喝杯速溶咖啡
@@ -144,7 +163,7 @@ Android 11 引入了一个新的开发者调试工具，能够帮助开发者更
 <img src="https://github.com/pengxurui/Android-NoteBook/raw/master/images/微信收款码.jpeg" width = "200" />
 </p>
 
-
+---
 
 #### License
 Copyright [2022] [Peng Xurui]
