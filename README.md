@@ -90,11 +90,9 @@
 
 ## 3. 系统适配手册
 
-### 3.1 系统更新解读
-
 | 平台版本 | API Level | 官方文档 | 适配手册 |
 | --- | --- | --- | --- |
-| Android 13 | TIRAMISU | https://developer.android.google.cn/about/versions/13 <br> https://developer.android.com/about/versions/13 | [Android_13_API_33_T](https://github.com/pengxurui/AndroidPlatformWiki/blob/main/Android%2013/Android_13_API_33_T.md)|
+| Android 13 | TIRAMISU | https://developer.android.google.cn/about/versions/13 <br> https://developer.android.com/about/versions/13 | [Android_13_DP2](https://github.com/pengxurui/AndroidPlatformWiki/blob/main/Android%2013/Android_13_DP2.md)|
 | Android 12L | S_V2（32） | https://developer.android.google.cn/about/versions/12/12L <br> https://developer.android.com/about/versions/12/12L | / |
 | Android 12 | S（31） | https://developer.android.google.cn/about/versions/12 <br> https://developer.android.com/about/versions/12 | [Android_12_API_31_S](https://github.com/pengxurui/AndroidPlatformWiki/blob/main/Android%2012/Android_12_API_31_S.md)|
 | Android 11 | R（30） | https://developer.android.google.cn/about/versions/11 <br> https://developer.android.com/about/versions/11 | |
@@ -112,15 +110,21 @@
 | Android 4.3 | JELLY_BEAN_MR2（18） | / | |
 | Android 4.2/4.2.2 | JELLY_BEAN_MR1（17） | / | |
 
-### 3.2 Android 13 开发者预览
+---
+
+## 4. 最新 Android 版本
+
+### Android 13 开发者预览版 2
 
 ![Android13封面](https://user-images.githubusercontent.com/25008934/164061894-ecd36374-e783-45be-b504-9540e234b9a8.png)
+
+Android 13 开发者预览版从 2022 年 2 月正式启动，3 月份 Google 已经发布了第 2 个开发者预览版。目前更新的内容主要还是围绕隐私和安全这个主题，我们会持续跟进官方的 [发布计划表](https://developer.android.google.cn/about/versions/13/overview)，最终版本预计在今年年底发布。
 
 <p align='center'>
 <img src="https://github.com/pengxurui/AndroidPlatformWiki/blob/main/Android%2013/images/Android%2013%20%E8%AE%A1%E5%88%92%E6%97%B6%E9%97%B4%E8%BD%B4.svg"/>
 </p>
 
-### **以 Android 13 为目标版本的应用**
+### 以 Android 13 为目标版本的应用
 
 | 类别 | 变更 | 兼容性 | 摘要 |
 | --- | --- | :--- | --- |
@@ -131,7 +135,7 @@
 |  | 更安全地动态注册广播接收器 | 强制❗ | 应用必须明确指出动态注册的广播接收器<br>是否接收其他应用的广播 |
 | 3. 性能和电池 | 等待更新... | / | / |
 
-### **所有应用**
+### 所有应用
 
 | 类别 | 变更 | 兼容性 | 描述 |
 | --- | --- | :--- | --- |
@@ -148,7 +152,7 @@
 
 ---
 
-## 4. 兼容性调试框架
+## 5. 兼容性调试框架
 
 Android 11 引入了一个新的开发者调试工具，能够帮助开发者更加灵活可控地适配新版系统。在此之前，当我们需要适配以特定 Android 系统版本为目标版本的行为变更时，我们需要先做以下操作：
 
