@@ -373,7 +373,9 @@ Android 12 引入了对使用 AV1 图片文件格式 (AVIF) 的图片的支持�
 
 Android 12 改进了现有的 Widgets API，让它们更实用、更美观，且更易于发现。相关改动详见以下资料：
 
-![Untitled 11](https://user-images.githubusercontent.com/25008934/164409226-fca85d92-0a76-4e7a-9a95-f00a914659d5.png)
+<p align='center'>
+<img src="https://user-images.githubusercontent.com/25008934/164409226-fca85d92-0a76-4e7a-9a95-f00a914659d5.png" width = "600" />
+</p>
 
 相关资料：
 
@@ -392,8 +394,8 @@ Android 12 改进了现有的 Widgets API，让它们更实用、更美观，且
   view.setRenderEffect(RenderEffect.createBlurEffect(radiusX, radiusY, SHADER_TILE_MODE))
   ```
 
-<p align='center'>
-<img src="https://user-images.githubusercontent.com/25008934/164409256-00b4371f-5d2f-4b78-8842-b3cc404361d1.png" width = "600" />
+<p align='left'>
+<img src="https://user-images.githubusercontent.com/25008934/164409256-00b4371f-5d2f-4b78-8842-b3cc404361d1.png" width = "300" />
 </p>
 
 ### 4.7 OverScroll 过度滑动动画改进
