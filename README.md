@@ -43,7 +43,6 @@
 
 **4、关注我的 [掘金](https://juejin.cn/user/1063982987230392)、[知乎](https://www.zhihu.com/people/pengxurui) 和 [《AndroidFamily》](https://github.com/pengxurui/AndroidFamily) 专栏：** 掘金上有我历史发布过的所有文章。
 
----
 ## 1. Android 系统适配的现状
 
 从 2008 年 9 月 23 日，Android 的第一个版本 Android 1.0 发布。到 2021 年 10 月 4 日，Android 12 正式版发布。不知不觉，Android 操作系统已经走过了十几个年头了，系统的发布周期也从最初的几年缩短到稳定的一年。
@@ -65,8 +64,6 @@
 - **2、全面能力：** 移动开发已经不再是当年单兵作战的时代，只 “做好” 产品需求已经远远不够了。你不仅需要掌握 Android 本身的知识，还需要全链路的知识扩展，比如产品思维、设计规范、市场运营、数据分析、后端等。如果你已经不是刚工作的小白，但是你却很少了解到这些知识，建议你思考下自己是不是处于舒适区。在这个立场下，系统兼容性就是你全面能力中的一环，你的功能在不同系统下是否兼容，你的技术方案有没有考虑过不同系统的差异，你对 Android 系统有多了解，这些都是你可以体现差异化价值的地方（当然你钻研于技术层面的某一个点，把这个点做到极致也是市场的）；
 
 - **3、别人在焦虑，你在行动：** 焦虑不能解决任何问题，与其把时间花在抱怨上，不如把时间花在解决问题上。
-
----
 
 ## 2. 我们在做的事
 
@@ -98,8 +95,6 @@
 
 - **以特定 targetSDKVersion 为目标版本的行为变更：** 只有 targetSDKVersion 高于或等于系统版本的应用会影响，通常是影响较大或适配工作量较大的变更，我们可以理解为一个 Google 留给开发者的适配缓冲。由于受 targetSDKVersion 控制的行为变更较多，你在适配新版系统时，可以利用下面提到的 “兼容性调试框架” 逐项启用，而不是修改 targetSDKVersion 一次性启用所有变更。
 
----
-
 ## 3. 系统适配手册
 
 | 平台版本 | API Level | 官方文档 | 适配手册 |
@@ -121,8 +116,6 @@
 | Android 4.4 | KITKAT（19） | https://developer.android.google.cn/about/versions/kitkat <br> https://developer.android.com/about/versions/kitkat | |
 | Android 4.3 | JELLY_BEAN_MR2（18） | / | |
 | Android 4.2/4.2.2 | JELLY_BEAN_MR1（17） | / | |
-
----
 
 ## 4. 最新 Android 版本
 
@@ -162,8 +155,6 @@ Android 13 开发者预览版从 2022 年 2 月正式启动，3 月份 Google �
   
 完整文档：[Android_13_API_33_T](https://github.com/pengxurui/AndroidPlatformWiki/blob/main/Android%2013/Android_13_API_33_T.md)
 
----
-
 ## 5. 兼容性调试框架
 
 Android 11 引入了一个新的开发者调试工具，能够帮助开发者更加灵活可控地适配新版系统。在此之前，当我们需要适配以特定 Android 系统版本为目标版本的行为变更时，我们需要先做以下操作：
@@ -195,7 +186,20 @@ Android 11 引入了一个新的开发者调试工具，能够帮助开发者更
 
 相关文档：[兼容性框架工具](https://developer.android.google.cn/guide/app-compatibility/test-debug)
 
----
+## 共同成长
+
+- 欢迎提 Issue 帮助修复缺陷；
+- 欢迎提 Pull Request 增加新的 Feature，让 AndroidPlatforms 变得更加强大，你的 ID 会出现在 Contributors 中；
+- 欢迎加 [作者微信](https://github.com/pengxurui/AndroidFamily/blob/master/images/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1.jpeg) 与作者交流，欢迎加入交流群找到志同道合的伙伴。
+
+## 小彭的其它开源项目
+
+- [AndroidFamily](https://github.com/pengxurui/AndroidFamily) 【Android 面经 + Android 学习指南】一份面向 Android 开发者的成长和进阶的学习路线；🔥
+- [EasyTrack](https://github.com/pengxurui/EasyTrack) 基于西瓜视频前端视图树埋点方案实现的埋点方案；
+- [EasyPrivacy](https://github.com/pengxurui/EasyPrivacy) 一个帮助开发者快速解决整改问题的工具；
+- [LeetCode-Kotlin](https://github.com/pengxurui/LeetCode-Kotlin) LeetCode 高频题解 - Kotlin 版本。
+
+更多内容，请 [点击](https://juejin.cn/user/1063982987230392)
 
 ## Donate
 
